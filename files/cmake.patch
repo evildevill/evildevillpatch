@@ -1,0 +1,12 @@
+--- CMakeLists.txt	2019-09-15 10:43:11.138999969 +0530
++++ /data/data/com.termux/files/home/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/CMakeLists.txt	2019-09-15 10:41:05.330999692 +0530
+@@ -253,8 +253,7 @@
+       "necessary python2 headers & libraries." )
+   endif()
+ else()
+-  set( Python_ADDITIONAL_VERSIONS 3.7 3.6 3.5 )
+-  find_package( PythonLibs 3.5 REQUIRED )  # 3.5 is ONLY the mininum
++  find_package(PythonLibs REQUIRED)
+ endif()
+ 
+ #############################################################################
